@@ -55,13 +55,13 @@ const editNoteHandler = (request, h) => {
 
         const response = h.response({
             status: 'success',
-            message: 'Catatan berhasil diupdate',
+            message: 'Catatan berhasil diperbarui',
             data: {
                 noteId: id
             }
         })
         console.log('[log] update note ID:', id)
-        response.code(201)
+        response.code(200)
         return response
     }
 
